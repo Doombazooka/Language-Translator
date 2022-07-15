@@ -18,7 +18,7 @@ if choice2 == "exel":
         input_for = str(sheet.cell_value(i, 0))
         result = translate.translate(input_for, dest='en')
         sheet1.write(i, 1, result.text)
-    wb.save('output_translation.xls')
+    wb.save('output_translation.xlsx')
 
 else:
     text = str(input("Please enter the text you want to convert : "))
